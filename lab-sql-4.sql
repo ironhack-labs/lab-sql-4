@@ -43,12 +43,7 @@
 
 -- 9. How many films include **Behind the Scenes** content?
 -- SELECT count(*) FROM sakila.film
--- WHERE description regexp 'Behind the Scenes';
--- Is this really = 0?
--- Test:
--- SELECT * FROM sakila.film
--- WHERE description regexp 'Scenes';
--- Looks like there isn't any description with this sentence.
+-- WHERE special_features regexp 'Behind the Scenes';
 
 -- 10. List films ordered by release year and title in alphabetical order.
 -- SELECT *
