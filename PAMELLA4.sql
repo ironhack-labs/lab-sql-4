@@ -38,7 +38,7 @@ LIMIT 10
 ;
 
 -- 9.How many films include Behind the Scenes content?
-SELECT * 
+SELECT count(special_features) 
 FROM film
 WHERE special_features REGEXP 'Behind the Scenes';
 
