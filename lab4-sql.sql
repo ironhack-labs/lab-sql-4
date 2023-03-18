@@ -2,7 +2,6 @@
 SELECT title,rating
 FROM sakila.film;
 
-
 -- Get release years.
 SELECT title, release_year
 FROM sakila.film;
@@ -17,6 +16,11 @@ WHERE title regexp 'ARMAGEDDON';
 SELECT *
 FROM sakila.film
 WHERE title regexp 'APOLLO'; 
+
+-- Get all films which title ends with APOLLO.
+SELECT *
+FROM sakila.film
+WHERE title regexp 'APOLLO$'; 
 
 -- Get all films with word DATE in the title.
 SELECT *
